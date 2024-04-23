@@ -9,9 +9,9 @@ MODILEMAGE.Parent = MODILEGUISOMEXHUB
 MODILEMAGE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MODILEMAGE.BackgroundTransparency = 1.000
 MODILEMAGE.BorderSizePixel = 0
-MODILEMAGE.Position = UDim2.new(0.234619886, 0, 0.239034846, 0)
+MODILEMAGE.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 MODILEMAGE.Size = UDim2.new(0, 50, 0, 50)
-MODILEMAGE.Image = "rbxassetid://4483345998"
+MODILEMAGE.Image = "rbxassetid://17263246688"
 WarpNero.Name = "WarpNero"
 WarpNero.Parent = game.CoreGui
 WarpNero.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -131,8 +131,8 @@ function Update:Window(text,logo,keybind)
 	Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, 10, 0, 1)
-	Logo.Size = UDim2.new(0, 100, 0, 100)
-	Logo.Image = "rbxassetid://17263246688"
+	Logo.Size = UDim2.new(0, 25, 0, 25)
+	Logo.Image = "rbxassetid://4483345998"
 
 	local Name = Instance.new("TextLabel")
 	Name.Name = "Name"
