@@ -1,0 +1,177 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local Window = Fluent:CreateWindow({
+    Title = "Godx Hub",
+    SubTitle = "[Premium]",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(530, 350),
+    Acrylic = true,
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.End
+})
+local Tabs = {
+    Shop = Window:AddTab({ Title = "Tab Shop", Icon = "" }),
+    Setting = Window:AddTab({ Title = "Setting Farm", Icon = "" }),
+    Farm = Window:AddTab({ Title = "Tab Farm", Icon = "" }),
+    Misc = Window:AddTab({ Title = "Tab Misc", Icon = "" }),
+    Mob = Window:AddTab({ Title = "Tab Material And Mob", Icon = "" }),
+    Webhook = Window:AddTab({ Title = "Tab Webhook", Icon = "" }),
+    Sea = Window:AddTab({ Title = "Tab Sea Event", Icon = "" }),
+    Raid = Window:AddTab({ Title = "Tab Raid And DF", Icon = "" }),
+    Race = Window:AddTab({ Title = "Tab Race", Icon = "" }),
+    Server = Window:AddTab({ Title = "Tab Status And Server", Icon = "" }),
+    Item = Window:AddTab({ Title = "Tab Item", Icon = "" }),
+    Player = Window:AddTab({ Title = "Tab Local Player", Icon = "" }),
+    PVP = Window:AddTab({ Title = "Tab PVP", Icon = "" }),
+    Setting1 = Window:AddTab({ Title = "Tab Setting", Icon = "" }),
+}
+
+local Options = Fluent.Options
+
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
+ImageButton.Size = UDim2.new(0, 50, 0, 50)
+ImageButton.Draggable = true
+ImageButton.Image = "rbxassetid://16761490896"
+ImageButton.MouseButton1Down:connect(function()
+    game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.End,false,game)
+end)
+
+
+
+Tabs.Shop:AddButton({
+        Title = "Reddem Code",
+        Description = "",
+        Callback = function()
+            RedeemCode()
+        end
+    })
+
+
+
+Tabs.Shop:AddButton({
+    Title = "Teleport Old World",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
+    end
+})
+
+
+
+Tabs.Shop:AddButton({
+    Title = "Teleport New World",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
+    end
+})
+
+
+
+Tabs.Shop:AddButton({
+    Title = "Teleport Third Sea",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
+    end
+})
+
+
+Tabs.Shop:AddParagraph({
+        Title = " ",
+        Content = "Fighting Shop"
+    })
+    
+    
+Tabs.Shop:AddButton({
+    Tilte = "Black Leg",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
+      end    
+})
+
+Tabs.Shop:AddButton({
+    Title = "Electrol",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
+      end    
+})
+
+Tabs.Shop:AddButton({
+    Title = "FishMan Karate",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyFishmanKarate")
+      end    
+})
+
+Tabs.Shop:AddButton({
+    Title = "Dragon Claw",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
+      end    
+})
+
+Tabs.Shop:AddButton({
+    Title = "SuperHuman",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
+      end    
+})
+
+Tabs.Shop:AddButton({
+    Title = "Death Step",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
+      end    
+})
+
+Tabs.Shop:AddButton({
+    Title = "Electric Claw",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw")
+      end    
+})
+
+Tabs.Shop:AddButton({
+    Title = "SharkMan Karate",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate")
+      end    
+})
+
+Tabs.Shop:AddButton({
+    Title = "Dragon Talon",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
+      end    
+})
+
+Tabs.Shop:AddButton({
+    Title = "Godhuman",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
+      end    
+})
