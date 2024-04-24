@@ -116,7 +116,7 @@ function Notif.New(text, timee)
     uicorner_2.Parent = text_button
 
     local image_button = Instance.new("ImageButton")
-    image_button.Image = "rbxassetid://17271262357"
+    image_button.Image = "rbxassetid://1"
     image_button.ImageColor3 = Color3.new(0.784314, 0.784314, 0.784314)
     image_button.ImageRectOffset = Vector2.new(924, 724)
     image_button.ImageRectSize = Vector2.new(36, 36)
@@ -195,7 +195,7 @@ game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
 game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
 end)
 UICorner.Parent = ImageButton1
-UIStroke.Color = Color3.fromRGB(232, 0, 2)
+UIStroke.Color = Color3.fromRGB(0, 0, 0)
 UIStroke.Thickness = 1.5
 UIStroke.Parent = ImageButton1
 UIGradient.Color = ColorSequence.new{
@@ -408,7 +408,7 @@ function Update:Window(text,logo,keybind)
   --  UserImage.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
     UserImage.Position = UDim2.new(0, 10, 0, -15)
     UserImage.Size = UDim2.new(0, 25, 0, 25)
-    UserImage.Image = "rbxassetid://17263246688"
+    UserImage.Image = "rbxassetid://17271262357"
     local UserImageCorner = Instance.new("UICorner")
     UserImageCorner.CornerRadius = UDim.new(0, 100)
     UserImageCorner.Name = "UserImageCorner"
@@ -421,7 +421,7 @@ function Update:Window(text,logo,keybind)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, -5, 0, -5)
 	Logo.Size = UDim2.new(0, 135, 0, 135)
-	Logo.Image = "rbxassetid://17263246688"
+	Logo.Image = "rbxassetid://17271262357"
     local Tab = Instance.new("Frame")
     Tab.Name = "Tab"
     Tab.Parent = Main
@@ -440,7 +440,7 @@ function Update:Window(text,logo,keybind)
     ScrollTab.Name = "ScrollTab"
     ScrollTab.Parent = Tab
     ScrollTab.Active = true
-    ScrollTab.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    ScrollTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     ScrollTab.BackgroundTransparency = 1.000
     ScrollTab.Size = UDim2.new(0, 133, 0, 203)
     ScrollTab.CanvasSize = UDim2.new(0, 0, 0, 0)
