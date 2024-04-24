@@ -391,7 +391,7 @@ function Update:Window(text,logo,keybind)
     UserText.TextColor3 = Color3.fromRGB(255, 255, 255)
     UserText.Size = UDim2.new(0, 80, 0, 25)
     UserText.Font = Enum.Font.GothamSemibold
-    UserText.Text = "APPLE HUB"
+    UserText.Text = "LIGHT HUB"
     UserText.TextScaled = true
     UserText.TextSize = 17.000
     UserText.TextWrapped = true
@@ -420,7 +420,7 @@ function Update:Window(text,logo,keybind)
 	Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, -5, 0, -5)
-	Logo.Size = UDim2.new(0, 135, 0, 135)
+	Logo.Size = UDim2.new(0, 100, 0, 100)
 	Logo.Image = "rbxassetid://17271262357"
     local Tab = Instance.new("Frame")
     Tab.Name = "Tab"
@@ -733,7 +733,7 @@ function Update:Window(text,logo,keybind)
         NotificationTitle.ZIndex = 3
         NotificationTitle.Font = Enum.Font.GothamSemibold
         NotificationTitle.Text = "Notification"
-        NotificationTitle.TextColor3 = Color3.fromRGB(255, 0, 0)
+        NotificationTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
         NotificationTitle.TextSize = 22.000
 
         Line.Name = "Line"
@@ -799,7 +799,7 @@ function Update:Window(text,logo,keybind)
 
         Button.Name = "Button"
         Button.Parent = MainFramePage
-        Button.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
         Button.Size = UDim2.new(0, 387, 0, 31)
 
         UICorner.CornerRadius = UDim.new(0, 5)
@@ -916,7 +916,7 @@ function Update:Window(text,logo,keybind)
         UIStroke.Name = "UIStroke"
         UIStroke.Parent = CheckFrame2
         UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-        UIStroke.Color = Color3.fromRGB(255, 0, 0)
+        UIStroke.Color = Color3.fromRGB(0, 0, 0)
         UIStroke.LineJoinMode = Enum.LineJoinMode.Round
         UIStroke.Thickness = 1
         UIStroke.Transparency = 0
@@ -1029,7 +1029,7 @@ function Update:Window(text,logo,keybind)
         UIStroke.Name = "UIStroke"
         UIStroke.Parent = Dropdown
         UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-        UIStroke.Color = Color3.fromRGB(255, 0, 0)
+        UIStroke.Color = Color3.fromRGB(0, 0, 0)
         UIStroke.LineJoinMode = Enum.LineJoinMode.Round
         UIStroke.Thickness = 1
         UIStroke.Transparency = 0
@@ -1052,7 +1052,7 @@ function Update:Window(text,logo,keybind)
         DropScroll.Name = "DropScroll"
         DropScroll.Parent = DropTitle
         DropScroll.Active = true
-        DropScroll.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        DropScroll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
         DropScroll.BackgroundTransparency = 1.000
         DropScroll.BorderSizePixel = 0
         DropScroll.Position = UDim2.new(0, 0, 0, 31)
@@ -1070,7 +1070,7 @@ function Update:Window(text,logo,keybind)
 
         DropButton.Name = "DropButton"
         DropButton.Parent = Dropdown
-        DropButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        DropButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
         DropButton.BackgroundTransparency = 1.000
         DropButton.Size = UDim2.new(0, 385, 0, 31)
         DropButton.Font = Enum.Font.SourceSans
