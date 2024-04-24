@@ -1287,7 +1287,7 @@ function Update:Window(text,logo,keybind)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
         ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-        ImageLabel.Image = "rbxassetid://15435099885"
+        ImageLabel.Image = "rbxassetid://1"
             
         Title.Parent = SliderFrame_2
         Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
@@ -3839,10 +3839,10 @@ local T = Library:AddTab("Teleport","1")
 local S = Library:AddTab("Shop","1")
 local D = Library:AddTab("Devil Fruit","1")
 local Misc = Library:AddTab("Misc","1")
---- ThÃ´ng Tin
+--- Thông Tin
 NguyenTien:AddSeperator("Information Developer")
-NguyenTien:AddLabel("Owner: Nguyen Tien (Tiny)")
-NguyenTien:AddLabel("Support Code: Lynx (My Girl Friend)")
+NguyenTien:AddLabel("Owner: Truong Vu (Tiny)")
+NguyenTien:AddLabel("Support Code: Obfchx (My Girl Friend)")
 NguyenTien:AddLabel("Ui: Thunderz Hub")
 NguyenTien:AddLabel("Thank You For Assisting Me With The\n Script Interface!")
 
