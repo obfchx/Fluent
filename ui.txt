@@ -1917,3 +1917,29 @@ function Update:Window(text,logo,keybind)
 end
 return uitab
 end
+
+
+local Library = Update:Window("Light Hub","",Enum.KeyCode.RightControl);
+
+local NguyenTien = Library:AddTab("Information","1")
+
+--- Thông Tin
+NguyenTien:AddSeperator("Information Developer")
+NguyenTien:AddLabel("Owner: Truong Vu (Tiny)")
+NguyenTien:AddLabel("Support Code: Obfchx (My Girl Friend)")
+NguyenTien:AddLabel("Ui: Thunderz Hub")
+NguyenTien:AddLabel("Thank You For Assisting Me With The\n Script Interface!")
+
+NguyenTien:AddSeperator("Social Network")
+NguyenTien:AddButton("Discord Sever",function()
+setclipboard("https://discord.gg/Dg5nr8CrVV")
+Notif.New("Copying To Clipboard DoneðŸŽ‰", 3)
+end)
+NguyenTien:AddButton("YouTube Official",function()
+setclipboard("https://youtube.com/@imtienguyenz")
+Notif.New("Copying To Clipboard DoneðŸŽ‰", 3)
+end)
+NguyenTien:AddButton("Facebook Official Owner",function()
+setclipboard("https://www.facebook.com/minhtien.modder")
+Notif.New("Copying To Clipboard DoneðŸŽ‰", 3)
+end)
